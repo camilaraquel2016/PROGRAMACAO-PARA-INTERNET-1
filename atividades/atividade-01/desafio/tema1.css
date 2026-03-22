@@ -74,39 +74,6 @@ h2 {
   font-size: var(--fonte-padrao);
 }
 
-.nova-postagem {
-  font-family: "Tilt Neon", sans-serif;
-  text-align: justify;
-}
-
-.p1-1 {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.p1-2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-}
-
-.p1-3 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 900;
-}
-
-.p2-1 {
-  font-family: "Roboto Slab";
-}
-
-.p2-2 {
-  font-family: "Roboto Slab";
-  font-style: oblique 10deg;
-}
-
-.p2-3 {
-  font-family: "Roboto Slab";
-  font-style: oblique 20deg;
-}
-
 .img-teste {
   width: 300px;
 }
