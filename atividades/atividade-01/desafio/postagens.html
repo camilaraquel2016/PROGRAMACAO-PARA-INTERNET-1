@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="tema" rel="stylesheet" href="tema1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="tema" rel="stylesheet" href="tema1.css" />
     <title>Postagens</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="inicio">
         <h1 class="titulo">Mini Blog de tecnologia</h1>
         <nav class="menu-links">
@@ -22,6 +22,7 @@
                 <li><a href="#post-engenharia">Engenharia de software</a></li>
                 <li><a href="#post-bebidas">Bebidas favoritas</a></li>
                 <li><a href="#post-tarefas">Tarefas</a></li>
+                <li><a href="#post-imagens">Imagens</a></li>
 
             </ul>
         </nav>
@@ -29,38 +30,49 @@
     </header>
 
     <main>
-        <section>
-            <article id="post-html">
-                <h2>Primeiros passos com HTML</h2>
-                <p>HTML é a base das páginas web. Com ele organizamos títulos, textos e a estrutura do conteúdo apresentado no navegador.</p>
-                <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-                <a class="voltar" href="#inicio">⬆</a>
-            </article>
-            
-            <article id="post-css">
-                <h2>O papel do CSS</h2>
-                <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os sites mais agradáveis visualmente</p>
-                <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-                <a class="voltar" href="#inicio">⬆</a>
-            </article>
-            <article id="post-validacao">
-                <h2>Validação do código</h2>
-                <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados para desenvolvimento web.</p>
-                <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-                <a class="voltar" href="#inicio">⬆</a>
-            </article>
+      <section>
+        <article id="post-html">
+          <h2>Primeiros passos com HTML</h2>
+          <p>
+            HTML é a base das páginas web. Com ele organizamos títulos, textos e
+            a estrutura do conteúdo apresentado no navegador.
+          </p>
+          <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+          <a class="voltar" href="#inicio">⬆</a>
+        </article>
 
-            <article id="post-codigo">
-                <h2>Código Python</h2>
-                <pre>
+        <article id="post-css">
+          <h2>O papel do CSS</h2>
+          <p>
+            O CSS define a aparência da página. Ele permite alterar cores,
+            alinhamentos e tipografia, tornando os sites mais agradáveis
+            visualmente
+          </p>
+          <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+          <a class="voltar" href="#inicio">⬆</a>
+        </article>
+        <article id="post-validacao">
+          <h2>Validação do código</h2>
+          <p>
+            Validar o HTML ajuda a encontrar erros e manter o código organizado,
+            seguindo os padrões recomendados para desenvolvimento web.
+          </p>
+          <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+          <a class="voltar" href="#inicio">⬆</a>
+        </article>
+
+        <article id="post-codigo">
+          <h2>Código Python</h2>
+          <pre>
 def imprimir_padrao(num_linhas):
     for i in range(num_linhas):
         for num_colunas in range(num_linhas-i):
             print("*", end="")
-    print()</pre>
-                <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-                <a class="voltar" href="#inicio">⬆</a>
-            </article>
+    print()</pre
+          >
+          <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+          <a class="voltar" href="#inicio">⬆</a>
+        </article>
 
             <article id="post-ed">
                 <h2>Estrutura de dados</h2>
@@ -94,7 +106,6 @@ def imprimir_padrao(num_linhas):
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
                 <a class="voltar" href="#inicio">⬆</a>
             </article>
-            
             <article class="container-bebidas" id="post-bebidas">
                 <h2>Bebidas Favoritas</h2>
                 <ol>
@@ -136,14 +147,35 @@ def imprimir_padrao(num_linhas):
                 </ol>
                 <a class="voltar" href="#inicio">⬆</a>
             </article>
+            
+            <div id="post-imagens" class="container-imagens">
+            <h3>Imagens</h3>
+            <div class="imagem-card">
+                <h4>Imagem alta resolução</h4>
+                <img src="./imagens/img-alta-resolucao.jpg" alt="">
+                <a class="voltar" href="#inicio">⬆</a>
+            </div>
+
+            <div class="imagem-card">
+                <h4>Imagem média resolução</h4>
+                <img src="./imagens/img-media-resolucao.jpg" alt="">
+                <a class="voltar" href="#inicio">⬆</a>
+            </div>
+
+            <div class="imagem-card">
+                <h4>Imagem baixa resolução</h4>
+                <img src="./imagens/img-baixa-resolucao.jpg" alt="">
+                <a class="voltar" href="#inicio">⬆</a>
+            </div>
+            </div>
+        
+
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 - Mini Blog de Tecnologia | Estudante de ADS</p>
+      <p>&copy; 2026 - Mini Blog de Tecnologia | Estudante de ADS</p>
     </footer>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
