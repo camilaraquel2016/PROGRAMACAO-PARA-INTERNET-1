@@ -8,31 +8,50 @@
 </head>
 
 <body>
-    <header>
-        <h1>Mini Blog de tecnologia</h1>
+    <header id="inicio">
+        <h1 class="titulo">Mini Blog de tecnologia</h1>
+        <nav class="menu-links">
+            <ul>
+                <li><a href="#post-html">Primeiro passos com HTML</a></li>
+                <li><a href="#post-css">O papel do CSS</a></li>
+                <li><a href="#post-validacao">Validação do código</a></li>
+                <li><a href="#post-codigo">Código Python</a></li>
+                <li><a href="#post-ed">Estrutura de dados</a></li>
+                <li><a href="#post-bd">Banco de dados</a></li>
+                <li><a href="#post-logica">Lógica de programação</a></li>
+                <li><a href="#post-engenharia">Engenharia de software</a></li>
+                <li><a href="#post-redes">Redes de computadores</a></li>
+                <li><a href="#post-bebidas">Bebidas favoritas</a></li>
+                <li><a href="#post-tarefas">Tarefas</a></li>
+
+            </ul>
+        </nav>
         <button class="botao-estilo" id="botao-estilo">alterar estilo</button>
     </header>
 
     <main>
         <section>
-            <article>
+            <article id="post-html">
                 <h2>Primeiros passos com HTML</h2>
                 <p>HTML é a base das páginas web. Com ele organizamos títulos, textos e a estrutura do conteúdo apresentado no navegador.</p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
             
-            <article>
+            <article id="post-css">
                 <h2>O papel do CSS</h2>
                 <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os sites mais agradáveis visualmente</p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article>
+            <article id="post-validacao">
                 <h2>Validação do código</h2>
                 <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados para desenvolvimento web.</p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
 
-            <article>
+            <article id="post-codigo">
                 <h2>Código Python</h2>
                 <pre>
 def imprimir_padrao(num_linhas):
@@ -41,44 +60,50 @@ def imprimir_padrao(num_linhas):
             print("*", end="")
     print()</pre>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
 
-            <article>
+            <article id="post-ed">
                 <h2>Estrutura de dados</h2>
                 <p>
                     Foca na organização e eficiência da memória. Estuda formas específicas de armazenar e organizar dados (como Arrays, Pilhas, Filas e Árvores) para que possam ser acessados e modificados de forma rápida e otimizada.
                 </p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article>
+            <article id="post-bd">
                 <h2>Banco de dados</h2>
                 <p>
                     Trata do armazenamento persistente. Envolve a criação, gerenciamento e consulta de dados em sistemas que mantêm a informação salva mesmo após o programa fechar. Utiliza linguagens como SQL para manipular tabelas e registros.
                 </p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article>
+            <article id="post-logica">
                 <h2>Lógica de programação</h2>
                 <p>
                     É o estudo da construção de algoritmos. Ensina a criar sequências de passos lógicos (instruções) para resolver problemas, utilizando estruturas de controle como loops (for, while) e condicionais (if, else).
                 </p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article>
+            <article id="post-engenharia">
                 <h2>Engenharia de software</h2>
                 <p>
                     É a aplicação de processos e metodologias na criação de sistemas. Abrange o ciclo de vida do software: desde o levantamento de requisitos com o cliente e o design da arquitetura até os testes de qualidade e a manutenção.
                 </p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article>
+            <article id="post-redes">
                 <h2>Redes de Computadores</h2>
                 <p>
                     Estuda a comunicação entre sistemas. Define como os dados são transmitidos entre diferentes dispositivos através de protocolos (como TCP/IP e HTTP), endereçamento (IP) e infraestrutura (cabos, roteadores e Wi-Fi).
                 </p>
                 <p class="autor">Autor: Ely Miranda | Data: 08/03/2026<p>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article class="container-bebidas">
+            <article class="container-bebidas" id="post-bebidas">
                 <h2>Bebidas Favoritas</h2>
                 <ol>
                     <li>Café expresso intenso</li>
@@ -86,8 +111,9 @@ def imprimir_padrao(num_linhas):
                     <li>Chocolate quente especial</li>
                     <li>Chá de hortelã</li>
                 </ol>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
-            <article class="container-tarefas">
+            <article class="container-tarefas" id="post-tarefas">
                 <h2>Tarefas</h2>
                 <ol>
                     <li class="tarefas">
@@ -116,6 +142,7 @@ def imprimir_padrao(num_linhas):
                             </ul>
                     </li>
                 </ol>
+                <a class="voltar" href="#inicio">⬆</a>
             </article>
         </section>
     </main>
