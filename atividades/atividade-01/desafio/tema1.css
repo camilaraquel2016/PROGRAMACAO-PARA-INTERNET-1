@@ -15,6 +15,7 @@
   --capuccino-cremoso: "🫧";
   --chocolate: "🍫";
   --hortela: "🍃";
+
   /* tamanhos de fonte */
   --fonte-pequena: 0.875rem;
   --fonte-padrao: 1rem;
@@ -23,105 +24,78 @@
   --fonte-titulo: 3rem;
 
   /* cores */
-  --cor-primaria: #011f26;
-  --cor-secundaria: #025e73;
-  --cor-fundo: #a5a692;
+  --cor-card:  #E0F2FE;
+  --cor-header: #1E40AF;
+  --cor-primaria: #2563eb;   /* azul principal */
+  --cor-secundaria: #1e40af; /* azul mais escuro */
+  --cor-fundo: #D0E7FF;      /* fundo claro */
+  --cor-card: #ffffff;       /* cards */
+  --cor-texto-azul: #1E3A8A;      /* texto */
 }
 
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #a5a692;
-  font-size: var(--fonte-padrao);
+  background-color: var(--cor-fundo);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--cor-texto-azul);
+  margin: 0;
+}
+
+header {
+  background-color: var(--cor-header);
+  padding: 10px;
+  border-bottom: #2196F3 solid 5px;
 }
 
 h1 {
-  background-color: #011f26;
   text-align: center;
   color: #fff;
   padding: 50px;
   font-size: var(--fonte-titulo);
 }
 
-h2 {
-  color: #025e73;
-  font-size: 2rem;
-  font-size: var(--fonte-grande);
-}
-
-.autor {
-  background-color: #bfb78f;
-  text-align: right;
-  padding: 5px;
-  font-style: italic;
-  font-size: var(--fonte-pequena);
-}
-
-.separador {
-  text-align: center;
-  color: #025e73;
-}
-
 .botao-estilo {
-  background-color: rgb(42, 42, 71);
-  font-size: 16px;
   padding: 16px;
   cursor: pointer;
   display: block;
-  margin: auto;
-  border: none;
+  margin: 20px auto;
   color: white;
-  border-radius: 8px;
+  border-radius: 20px;
   font-size: var(--fonte-padrao);
+  background: #1b77da;
+  border: #eff8ff solid 2px;
 }
 
-.img-teste {
-  width: 300px;
+
+
+
+article {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: var(--cor-card);
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid #60A5FA;
+  box-shadow: 6px 6px 0px rgba(30, 64, 175, 0.1); 
+  color: #0e0e10;
 }
 
-/* =========================
-ESTILIZAÇÃO DA LISTA (ol)
-========================= */
-/* Define a cor do texto da lista */
-.container-bebidas ol {
-  /* remove o espaço padrão colocado na esquerda em ol*/
-  padding-left: 0;
-  color: #1951c0;
-  /* Faz o número aparecer dentro do bloco do item */
-  list-style-position: inside;
-  /* Limita a largura da lista */
-  max-width: 400px;
+h2 {
+    color: #1E40AF;
+    font-weight: 800;
+    margin-top: 0;
+    border-bottom: 2px solid #60A5FA;
+    display: inline-block;
+    padding-bottom: 5px;
+}
 
-  /* Centraliza a lista horizontalmente */
-  margin: auto;
-  margin-bottom: 30px;
-}
-/* =========================
-ESTILIZAÇÃO DOS ITENS (li)
-========================= */
-.container-bebidas li {
-  /* Cor de fundo dos itens */
-  /* Arredondamento das bordas */
-  border-radius: 12px;
-  /* Espaçamento interno (respiro do conteúdo) */
-  padding: 18px 18px;
-  /* Espaçamento entre os itens */
-  margin: 12px 0;
-  /* Suaviza mudanças visuais (hover, movimento, etc.) */
-  transition: 0.2s;
-  font-family: "Roboto Slab";
-  background: #2196f3;
-  color: #fff;
-  cursor: pointer;
-}
-/* =========================
-EFEITO AO PASSAR O MOUSE
-========================= */
-.container-bebidas li:hover {
-  /* Move levemente o item para a direita */
-  transform: translateX(6px);
-  /* Clareia um pouco o fundo */
-  background: #81c9fa;
-  color: #040c35;
+.autor {
+  margin-top: 30px;
+  text-align: right;
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--fonte-pequena);
+  margin-bottom: 0;
 }
 
 .container-bebidas {
@@ -132,10 +106,42 @@ EFEITO AO PASSAR O MOUSE
   background: #1465bb;
 }
 
-.container-bebidas h2 {
-  text-align: center;
-  color: #fff;
+
+.container-bebidas ol {
+  /* remove o espaço padrão colocado na esquerda em ol*/
+  padding-left: 0;
+  color: #1951c0;
+  /* Faz o número aparecer dentro do bloco do item */
+  list-style-position: inside;
+  /* Limita a largura da lista */
+  max-width: 400px;
+  /* Centraliza a lista horizontalmente */
+  margin: auto;
+  margin-bottom: 30px;
 }
+
+.container-bebidas li {
+  border-radius: 12px;
+  padding: 18px;
+  /* Espaçamento entre os itens */
+  margin: 12px 0;
+  transition: 0.2s;
+  font-family: "Roboto Slab";
+  background: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.container-bebidas li:hover {
+  transform: translateX(6px);
+  background: #81c9fa;
+  color: #040c35;
+}
+
+
+
+
 
 .container-bebidas li:nth-child(1)::before {
   content: var(--cafe-intenso);
@@ -153,22 +159,51 @@ EFEITO AO PASSAR O MOUSE
   content: var(--hortela);
 }
 
+.container-bebidas h2, .container-tarefas h2 {
+  display: block;
+  border: none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.container-tarefas {
+  background: #5fb8f3;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
 .container-tarefas ol {
   max-width: 450px;
   margin: 20px auto;
 }
 
 .tarefas {
-  background: #2d77c5;
   background: #2196f3;
   border-radius: 20px;
   padding: 13px;
-  margin: 15px;
+  margin: 20px;
   border-left: 5px solid #0e01a1;
 }
 
-.tarefas ul {
+.tarefas:hover {
+  background: #81c9fa;
+  transform: translateX(10px);
+  color: #000107;
+}
+
+ul, ol {
   padding-left: 0;
+}
+
+
+ul {
   list-style: none;
 }
 
@@ -180,6 +215,7 @@ EFEITO AO PASSAR O MOUSE
 .tarefas li::before {
   content: var(--alvo);
 }
+
 
 /* maneira 1 -  Selecionando por hierarquia */
 .container-tarefas li:nth-child(1) ul li:nth-child(1) {
@@ -204,20 +240,9 @@ EFEITO AO PASSAR O MOUSE
   border-radius: 4px; 
 }
 
-.container-tarefas ol {
-  padding-left: 0;
-}
 
-.container-tarefas h2 {
+
+footer {
   text-align: center;
-  color: #fff;
 }
-
-.container-tarefas {
-  background-color: #8fbee4;
-  background: #1465bb;
-  margin: 20px auto;
-  max-width: 500px;
-  border-radius: 10px;
-  padding: 10px;
-}
+ 
